@@ -1,0 +1,183 @@
+/*
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024A
+Assessment: Fundamental Programming Challenge
+Author: Nguyen Bao
+ID: s4031516
+Acknowledgement:
+*/
+
+/* ------------------------- */
+/* YOUR CSS WORK STARTS HERE */
+/* ------------------------- */
+
+/*
+Primary Color: #fb92f9
+Secondary color: #eb8fad
+*/
+
+/* Global font style */
+* {
+    font-family: "Fredoka", sans-serif;
+}
+
+/* Resetting the default styling and margin for headers so we can bold them as we want */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 12px;
+}
+
+/* Main gallery styling layout */
+#gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Header */
+#header-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #eb8fad;
+}
+
+#header-text {
+    text-align: right;
+}
+
+#header-strong {
+    color: #eb8fad;
+}
+
+/* Main */
+#main {
+    display: flex;
+    border: 2px solid #eb8fad;
+    border-radius: 24px;
+    gap: 12px;
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-right: 2px solid #eb8fad;
+    padding: 12px;
+}
+
+#profile > h5 {
+    margin: 6px;
+}
+
+#profile-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid #fb92f9;
+}
+
+#name {
+    font-weight: bold;
+    text-align: center;
+}
+
+#first-name, #title {
+    color: #eb8fad;
+}
+
+#title {
+    text-align: right;
+}
+
+.note {
+    font-style: italic;
+}
+
+/* Album */
+#album {
+    padding: 12px 0px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    outline: 2px solid #eb8fad;
+}
+
+.image-text {
+    padding: 6px;
+}
+
+.image-text > *, .image-text > * > * {
+    color: #fb92f9;
+}
+
+.image-text > div {
+    text-align: right;
+}
+
+.image-text > h3 {
+    font-weight: bold;
+}
+
+.image-container > img {
+    width: 100%;
+}
+/* Setting the image containers width as specified */
+.image-container:nth-child(1) {
+    flex-basis: 100%;
+}
+
+.image-container:nth-child(2), .image-container:nth-child(3), .image-container:nth-child(4) {
+    flex-basis: 33.33%;
+}
+
+.image-container:nth-child(5), .image-container:nth-child(6) {
+    flex-basis: 50%;
+} 
+
+/* Footer */
+#footer {
+    text-align: center;
+    margin: 24px;
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    #header-text, #profile > * {
+        text-align: center;
+    }
+
+    #main, #profile {
+        border: none;
+    }
+
+    /* Display elements drom top down */ 
+    #main {
+        flex-direction: column;
+    }
+
+    /* Create some gaps between images for ease of view */
+    #album {
+        padding: 0px;
+        gap: 24px;
+    }
+
+    #profile, #album {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    #album > * {
+        flex-basis: 100%;
+    }
+
+    .image-container > img {
+        height: 200px;
+    }
+}

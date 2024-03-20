@@ -1,0 +1,104 @@
+<!--
+RMIT University Vietnam
+Course: COSC3058 Web Programming Bootcamp
+Semester: 2024A
+Assessment: Fundamental Programming Challenge
+Author: Nguyen Bao
+ID: s4031516
+Acknowledgement: Picture of character Hitori Bocchi from Bocchi The Rock (written by Aki Hamazi and directed by Keiichiro Saito); Picture of the Qingxing from the game Genshin Impact (Hoyoverse)
+-->
+
+<!--
+  YOUR HTML WORK STARTS HERE
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyen Bao's Photo Gallery</title>
+
+  <!-- Link the favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/logo.webp">
+  <!-- Including CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Gallery container -->
+  <div id="gallery">
+    <!-- Header section -->
+    <header id="header">
+      <img id="header-img" src="assets/logo.webp" width="64" height="64" alt="Gallery's logo">
+        <h2 id="header-text">My <strong id="header-strong">Photo Gallery</strong></h2>
+    </header>
+    <!-- Main section -->
+    <main id="main">
+      <!-- Profile -->
+      <section id="profile">
+        <img id="profile-image" src="assets/profile.png" width="200" height="200" alt="Profile picture">
+        <h5 class="note">Hi, It's me~</h5>
+        <h1 id="name">Nguyen <span id="first-name">Bao</span></h1>
+        <h4 id="title">Full Stack Developer</h4>
+        <h5 class="note">s4031516</h5>
+        <h5 class="note">s4031516@rmit.edu.vn</h5>
+      </section>
+      <!-- Album -->
+      <div id="album">
+        <div class="image-container">
+          <img src="assets/nature-2.jpg" height="300" alt="A sight of a rising sun">
+          <summary class="image-text">
+            <h3>A wonder of nature</h3>
+            <div><a href="#">See more...</a></div>
+          </summary>
+        </div>
+        <div class="image-container">
+          <img src="assets/car.jpg" height="150" alt="A stylish yellow car with an open roof parked in front of a mansion">
+          <summary class="image-text">
+            <h3>A stylish car</h3>
+            <div><a href="#">See more...</a></div>
+          </summary>
+        </div>
+        <div class="image-container">
+          <img src="assets/flower.jpg" height="150" alt="A yellow-orange flower tinged with hints of red thats blooming">
+          <summary class="image-text">
+            <h3>A blooming flower</h3>
+            <div><a href="#">See more...</a></div>
+          </summary>
+        </div>
+        <div class="image-container">
+          <img src="assets/cake.jpg" height="150" alt="A cake decorated with flowers, along it several sweets">
+          <summary class="image-text">
+            <h3>A delicious cake!</h3>
+            <div><a href="#">See more...</a></div>
+          </summary>
+        </div>
+        <div class="image-container">
+          <img src="assets/meal.jpg" height="300" alt="A meal comprised of seafood and bread, decorated with a lemon on top">
+          <summary class="image-text">
+            <h3>A savory meal...</h3>
+            <div><a href="#">See more...</a></div>
+          </summary>
+        </div>
+        <div class="image-container">
+          <img src="assets/nature-1.jpg" height="300" alt="A sight of a waterfall in a lush forest">
+          <div class="image-text">
+            <h3>A majestic sight of nature</h3>
+            <div><a href="#">See more...</a></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      Made with 💖 by <strong>Nguyen Bao</strong>
+    </footer>
+  </div>
+</body>
+</html>
